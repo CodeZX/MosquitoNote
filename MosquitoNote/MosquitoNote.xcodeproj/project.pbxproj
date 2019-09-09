@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CF839762326256C00DD9473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839752326256C00DD9473 /* AppDelegate.m */; };
+		3CF8397C2326256C00DD9473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8397A2326256C00DD9473 /* Main.storyboard */; };
+		3CF8397E2326256E00DD9473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8397D2326256E00DD9473 /* Assets.xcassets */; };
+		3CF839812326256E00DD9473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8397F2326256E00DD9473 /* LaunchScreen.storyboard */; };
+		3CF839842326256E00DD9473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839832326256E00DD9473 /* main.m */; };
+		3CF8398E2326256E00DD9473 /* MosquitoNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8398D2326256E00DD9473 /* MosquitoNoteTests.m */; };
+		3CF839992326256E00DD9473 /* MosquitoNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839982326256E00DD9473 /* MosquitoNoteUITests.m */; };
+		3CF839BF23262F8700DD9473 /* MNBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839BE23262F8700DD9473 /* MNBasicViewController.m */; };
+		3CF839C223262FDB00DD9473 /* MNBasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839C123262FDB00DD9473 /* MNBasicNavigationController.m */; };
+		3CF839C52326305F00DD9473 /* MNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839C42326305F00DD9473 /* MNHomeViewController.m */; };
+		3CF839C82326310F00DD9473 /* MNBasicTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839C72326310F00DD9473 /* MNBasicTabBarController.m */; };
+		3CF839CB2326321C00DD9473 /* MNMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839CA2326321C00DD9473 /* MNMainNavigationController.m */; };
+		3CF839D223264A8600DD9473 /* MNInputToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839D123264A8600DD9473 /* MNInputToolBarView.m */; };
+		3CF839D5232651F200DD9473 /* MNToolBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839D4232651F200DD9473 /* MNToolBarItemCell.m */; };
+		D12452DBC1EB27AF6B4A4B94 /* libPods-MosquitoNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C1487931A674AE8E2CAB9C /* libPods-MosquitoNote.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CF8398A2326256E00DD9473 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CF839692326256C00DD9473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF839702326256C00DD9473;
+			remoteInfo = MosquitoNote;
+		};
+		3CF839952326256E00DD9473 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CF839692326256C00DD9473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CF839702326256C00DD9473;
+			remoteInfo = MosquitoNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CF839712326256C00DD9473 /* MosquitoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosquitoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF839742326256C00DD9473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CF839752326256C00DD9473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CF8397B2326256C00DD9473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CF8397D2326256E00DD9473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CF839802326256E00DD9473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CF839822326256E00DD9473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF839832326256E00DD9473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CF839892326256E00DD9473 /* MosquitoNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosquitoNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF8398D2326256E00DD9473 /* MosquitoNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosquitoNoteTests.m; sourceTree = "<group>"; };
+		3CF8398F2326256E00DD9473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF839942326256E00DD9473 /* MosquitoNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosquitoNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF839982326256E00DD9473 /* MosquitoNoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosquitoNoteUITests.m; sourceTree = "<group>"; };
+		3CF8399A2326256E00DD9473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF839BD23262F8700DD9473 /* MNBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBasicViewController.h; sourceTree = "<group>"; };
+		3CF839BE23262F8700DD9473 /* MNBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBasicViewController.m; sourceTree = "<group>"; };
+		3CF839C023262FDB00DD9473 /* MNBasicNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBasicNavigationController.h; sourceTree = "<group>"; };
+		3CF839C123262FDB00DD9473 /* MNBasicNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBasicNavigationController.m; sourceTree = "<group>"; };
+		3CF839C32326305F00DD9473 /* MNHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNHomeViewController.h; sourceTree = "<group>"; };
+		3CF839C42326305F00DD9473 /* MNHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNHomeViewController.m; sourceTree = "<group>"; };
+		3CF839C62326310F00DD9473 /* MNBasicTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNBasicTabBarController.h; sourceTree = "<group>"; };
+		3CF839C72326310F00DD9473 /* MNBasicTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNBasicTabBarController.m; sourceTree = "<group>"; };
+		3CF839C92326321C00DD9473 /* MNMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNMainNavigationController.h; sourceTree = "<group>"; };
+		3CF839CA2326321C00DD9473 /* MNMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNMainNavigationController.m; sourceTree = "<group>"; };
+		3CF839CC232633CD00DD9473 /* MNPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNPrefixHeader.pch; sourceTree = "<group>"; };
+		3CF839D023264A8600DD9473 /* MNInputToolBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNInputToolBarView.h; sourceTree = "<group>"; };
+		3CF839D123264A8600DD9473 /* MNInputToolBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNInputToolBarView.m; sourceTree = "<group>"; };
+		3CF839D3232651F200DD9473 /* MNToolBarItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNToolBarItemCell.h; sourceTree = "<group>"; };
+		3CF839D4232651F200DD9473 /* MNToolBarItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNToolBarItemCell.m; sourceTree = "<group>"; };
+		43C1487931A674AE8E2CAB9C /* libPods-MosquitoNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MosquitoNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF034E433399F771E8C5AEE /* Pods-MosquitoNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote.debug.xcconfig"; sourceTree = "<group>"; };
+		A5004C9E6898740958954AD7 /* Pods-MosquitoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CF8396E2326256C00DD9473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12452DBC1EB27AF6B4A4B94 /* libPods-MosquitoNote.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF839862326256E00DD9473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF839912326256E00DD9473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CF839682326256C00DD9473 = {
+			isa = PBXGroup;
+			children = (
+				3CF839732326256C00DD9473 /* MosquitoNote */,
+				3CF8398C2326256E00DD9473 /* MosquitoNoteTests */,
+				3CF839972326256E00DD9473 /* MosquitoNoteUITests */,
+				3CF839722326256C00DD9473 /* Products */,
+				F10C565D0A5FC94FF8942ABD /* Pods */,
+				8A7B4FE2113BA4A0C1E226E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CF839722326256C00DD9473 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839712326256C00DD9473 /* MosquitoNote.app */,
+				3CF839892326256E00DD9473 /* MosquitoNoteTests.xctest */,
+				3CF839942326256E00DD9473 /* MosquitoNoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CF839732326256C00DD9473 /* MosquitoNote */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839AB232628D000DD9473 /* Delegate */,
+				3CF839A6232628AF00DD9473 /* Main */,
+				3CF839AA232628B800DD9473 /* Resource */,
+			);
+			path = MosquitoNote;
+			sourceTree = "<group>";
+		};
+		3CF8398C2326256E00DD9473 /* MosquitoNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8398D2326256E00DD9473 /* MosquitoNoteTests.m */,
+				3CF8398F2326256E00DD9473 /* Info.plist */,
+			);
+			path = MosquitoNoteTests;
+			sourceTree = "<group>";
+		};
+		3CF839972326256E00DD9473 /* MosquitoNoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839982326256E00DD9473 /* MosquitoNoteUITests.m */,
+				3CF8399A2326256E00DD9473 /* Info.plist */,
+			);
+			path = MosquitoNoteUITests;
+			sourceTree = "<group>";
+		};
+		3CF839A6232628AF00DD9473 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839B823262EC900DD9473 /* Basic */,
+				3CF839B723262EA900DD9473 /* Home */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3CF839A7232628AF00DD9473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839C32326305F00DD9473 /* MNHomeViewController.h */,
+				3CF839C42326305F00DD9473 /* MNHomeViewController.m */,
+				3CF839C92326321C00DD9473 /* MNMainNavigationController.h */,
+				3CF839CA2326321C00DD9473 /* MNMainNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3CF839A8232628AF00DD9473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CF839A9232628AF00DD9473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839D023264A8600DD9473 /* MNInputToolBarView.h */,
+				3CF839D123264A8600DD9473 /* MNInputToolBarView.m */,
+				3CF839D3232651F200DD9473 /* MNToolBarItemCell.h */,
+				3CF839D4232651F200DD9473 /* MNToolBarItemCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CF839AA232628B800DD9473 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8397A2326256C00DD9473 /* Main.storyboard */,
+				3CF8397D2326256E00DD9473 /* Assets.xcassets */,
+				3CF8397F2326256E00DD9473 /* LaunchScreen.storyboard */,
+				3CF839822326256E00DD9473 /* Info.plist */,
+				3CF839832326256E00DD9473 /* main.m */,
+				3CF839CC232633CD00DD9473 /* MNPrefixHeader.pch */,
+			);
+			name = Resource;
+			path = MosquitoNote/Resource;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CF839AB232628D000DD9473 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839742326256C00DD9473 /* AppDelegate.h */,
+				3CF839752326256C00DD9473 /* AppDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3CF839B723262EA900DD9473 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839A7232628AF00DD9473 /* Controller */,
+				3CF839A8232628AF00DD9473 /* Model */,
+				3CF839A9232628AF00DD9473 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3CF839B823262EC900DD9473 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839BC23262F4B00DD9473 /* View */,
+				3CF839BB23262F4000DD9473 /* Controller */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		3CF839BB23262F4000DD9473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CF839BD23262F8700DD9473 /* MNBasicViewController.h */,
+				3CF839BE23262F8700DD9473 /* MNBasicViewController.m */,
+				3CF839C023262FDB00DD9473 /* MNBasicNavigationController.h */,
+				3CF839C123262FDB00DD9473 /* MNBasicNavigationController.m */,
+				3CF839C62326310F00DD9473 /* MNBasicTabBarController.h */,
+				3CF839C72326310F00DD9473 /* MNBasicTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3CF839BC23262F4B00DD9473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A7B4FE2113BA4A0C1E226E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43C1487931A674AE8E2CAB9C /* libPods-MosquitoNote.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F10C565D0A5FC94FF8942ABD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FF034E433399F771E8C5AEE /* Pods-MosquitoNote.debug.xcconfig */,
+				A5004C9E6898740958954AD7 /* Pods-MosquitoNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CF839702326256C00DD9473 /* MosquitoNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF8399D2326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNote" */;
+			buildPhases = (
+				65D17C2D9EB3980985672705 /* [CP] Check Pods Manifest.lock */,
+				3CF8396D2326256C00DD9473 /* Sources */,
+				3CF8396E2326256C00DD9473 /* Frameworks */,
+				3CF8396F2326256C00DD9473 /* Resources */,
+				2CBD935A3D1F31025A5BC026 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MosquitoNote;
+			productName = MosquitoNote;
+			productReference = 3CF839712326256C00DD9473 /* MosquitoNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CF839882326256E00DD9473 /* MosquitoNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF839A02326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNoteTests" */;
+			buildPhases = (
+				3CF839852326256E00DD9473 /* Sources */,
+				3CF839862326256E00DD9473 /* Frameworks */,
+				3CF839872326256E00DD9473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF8398B2326256E00DD9473 /* PBXTargetDependency */,
+			);
+			name = MosquitoNoteTests;
+			productName = MosquitoNoteTests;
+			productReference = 3CF839892326256E00DD9473 /* MosquitoNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CF839932326256E00DD9473 /* MosquitoNoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF839A32326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNoteUITests" */;
+			buildPhases = (
+				3CF839902326256E00DD9473 /* Sources */,
+				3CF839912326256E00DD9473 /* Frameworks */,
+				3CF839922326256E00DD9473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CF839962326256E00DD9473 /* PBXTargetDependency */,
+			);
+			name = MosquitoNoteUITests;
+			productName = MosquitoNoteUITests;
+			productReference = 3CF839942326256E00DD9473 /* MosquitoNoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CF839692326256C00DD9473 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = ZX;
+				TargetAttributes = {
+					3CF839702326256C00DD9473 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					3CF839882326256E00DD9473 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3CF839702326256C00DD9473;
+					};
+					3CF839932326256E00DD9473 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3CF839702326256C00DD9473;
+					};
+				};
+			};
+			buildConfigurationList = 3CF8396C2326256C00DD9473 /* Build configuration list for PBXProject "MosquitoNote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CF839682326256C00DD9473;
+			productRefGroup = 3CF839722326256C00DD9473 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CF839702326256C00DD9473 /* MosquitoNote */,
+				3CF839882326256E00DD9473 /* MosquitoNoteTests */,
+				3CF839932326256E00DD9473 /* MosquitoNoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CF8396F2326256C00DD9473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF839812326256E00DD9473 /* LaunchScreen.storyboard in Resources */,
+				3CF8397E2326256E00DD9473 /* Assets.xcassets in Resources */,
+				3CF8397C2326256C00DD9473 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF839872326256E00DD9473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF839922326256E00DD9473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CBD935A3D1F31025A5BC026 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote-resources.sh",
+				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65D17C2D9EB3980985672705 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosquitoNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CF8396D2326256C00DD9473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF839D223264A8600DD9473 /* MNInputToolBarView.m in Sources */,
+				3CF839BF23262F8700DD9473 /* MNBasicViewController.m in Sources */,
+				3CF839C82326310F00DD9473 /* MNBasicTabBarController.m in Sources */,
+				3CF839C223262FDB00DD9473 /* MNBasicNavigationController.m in Sources */,
+				3CF839CB2326321C00DD9473 /* MNMainNavigationController.m in Sources */,
+				3CF839C52326305F00DD9473 /* MNHomeViewController.m in Sources */,
+				3CF839D5232651F200DD9473 /* MNToolBarItemCell.m in Sources */,
+				3CF839842326256E00DD9473 /* main.m in Sources */,
+				3CF839762326256C00DD9473 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF839852326256E00DD9473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF8398E2326256E00DD9473 /* MosquitoNoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF839902326256E00DD9473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF839992326256E00DD9473 /* MosquitoNoteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CF8398B2326256E00DD9473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CF839702326256C00DD9473 /* MosquitoNote */;
+			targetProxy = 3CF8398A2326256E00DD9473 /* PBXContainerItemProxy */;
+		};
+		3CF839962326256E00DD9473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CF839702326256C00DD9473 /* MosquitoNote */;
+			targetProxy = 3CF839952326256E00DD9473 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CF8397A2326256C00DD9473 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF8397B2326256C00DD9473 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CF8397F2326256E00DD9473 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CF839802326256E00DD9473 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CF8399B2326256E00DD9473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MosquitoNote/Resource/MNPrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CF8399C2326256E00DD9473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MosquitoNote/Resource/MNPrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CF8399E2326256E00DD9473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF034E433399F771E8C5AEE /* Pods-MosquitoNote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 484G6WE6BR;
+				INFOPLIST_FILE = MosquitoNote/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZX.MosquitoNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CF8399F2326256E00DD9473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5004C9E6898740958954AD7 /* Pods-MosquitoNote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 484G6WE6BR;
+				INFOPLIST_FILE = MosquitoNote/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZX.MosquitoNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CF839A12326256E00DD9473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 484G6WE6BR;
+				INFOPLIST_FILE = MosquitoNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZX.MosquitoNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MosquitoNote.app/MosquitoNote";
+			};
+			name = Debug;
+		};
+		3CF839A22326256E00DD9473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 484G6WE6BR;
+				INFOPLIST_FILE = MosquitoNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZX.MosquitoNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MosquitoNote.app/MosquitoNote";
+			};
+			name = Release;
+		};
+		3CF839A42326256E00DD9473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 484G6WE6BR;
+				INFOPLIST_FILE = MosquitoNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZX.MosquitoNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MosquitoNote;
+			};
+			name = Debug;
+		};
+		3CF839A52326256E00DD9473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 484G6WE6BR;
+				INFOPLIST_FILE = MosquitoNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZX.MosquitoNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MosquitoNote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CF8396C2326256C00DD9473 /* Build configuration list for PBXProject "MosquitoNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF8399B2326256E00DD9473 /* Debug */,
+				3CF8399C2326256E00DD9473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF8399D2326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF8399E2326256E00DD9473 /* Debug */,
+				3CF8399F2326256E00DD9473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF839A02326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF839A12326256E00DD9473 /* Debug */,
+				3CF839A22326256E00DD9473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF839A32326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF839A42326256E00DD9473 /* Debug */,
+				3CF839A52326256E00DD9473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CF839692326256C00DD9473 /* Project object */;
+}

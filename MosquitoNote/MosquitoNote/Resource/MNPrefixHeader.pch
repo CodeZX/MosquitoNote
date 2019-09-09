@@ -1,0 +1,21 @@
+//
+//  MNPrefixHeader.pch
+//  MosquitoNote
+//
+//  Created by 周鑫 on 2019/9/9.
+//  Copyright © 2019 ZX. All rights reserved.
+//
+
+#ifndef MNPrefixHeader_pch
+#define MNPrefixHeader_pch
+
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry/Masonry.h>
+#import <YYCategories/YYCategories.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* MNPrefixHeader_pch */
