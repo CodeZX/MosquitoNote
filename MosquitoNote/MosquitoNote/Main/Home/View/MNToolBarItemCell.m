@@ -19,7 +19,20 @@
 }
 - (void)setupUI {
     
-    self.contentView.backgroundColor = [UIColor redColor];
+    self.contentView.backgroundColor = [UIColor whiteColor];
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = 4;
+    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.layer.borderWidth = 0.5f;
+    
+    UILabel *titleLabel = [[UILabel alloc]init];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self.contentView addSubview:titleLabel];
+    self.titleLabel = titleLabel;
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.contentView);
+    }];
+    
 }
 
 

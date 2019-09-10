@@ -8,9 +8,15 @@
 
 #import "MNInputToolBarView.h"
 #import "MNToolBarItemCell.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+
 
 @interface MNInputToolBarView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+
 @property (nonatomic,weak) UICollectionView *collectionView;
+@property (nonatomic,strong) NSArray *identifierStirngArray;
+
+
 @end
 
 
@@ -22,9 +28,19 @@ static NSString * const ItemIdentifier = @"ItemIdentifier";
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+        [self setupData];
         [self setupUI];
     }
     return self;
+}
+
+- (void)setupData {
+    
+    self.identifierStirngArray = @[@"*",@"#",@"_",@"~",@"`",@"|",@"-",@">",@"[",@"]"];
+    
+   
+    
 }
 
 - (void)setupUI {
@@ -35,6 +51,8 @@ static NSString * const ItemIdentifier = @"ItemIdentifier";
     layout.itemSize = CGSizeMake(30, 30);
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+    collectionView.contentInset = UIEdgeInsetsMake(0, 5, 0, 0);
+    collectionView.backgroundColor = [UIColor whiteColor];
     collectionView.delegate = self;
     collectionView.dataSource = self;
     [self addSubview:collectionView];
@@ -48,6 +66,8 @@ static NSString * const ItemIdentifier = @"ItemIdentifier";
 }
 
 
+
+
 #pragma mark -------------------------- collectionView delegate  ----------------------------------------
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -56,12 +76,13 @@ static NSString * const ItemIdentifier = @"ItemIdentifier";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return self.identifierStirngArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     MNToolBarItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ItemIdentifier forIndexPath:indexPath];
+    cell.titleLabel.text = self.identifierStirngArray[indexPath.row];
     return cell;
     
 }
@@ -71,7 +92,8 @@ static NSString * const ItemIdentifier = @"ItemIdentifier";
     
     
     if ([self.delegate respondsToSelector:@selector(inputToolBarView:forIndex:markIdentifier:)]) {
-        [self.delegate inputToolBarView:self forIndex:indexPath.row markIdentifier:@""];
+        
+        [self.delegate inputToolBarView:self forIndex:indexPath.row markIdentifier:self.identifierStirngArray[indexPath.row]];
     }
 }
 
