@@ -1,18 +1,19 @@
 //
-//  MosquitoNoteTests.m
+//  fileManageTests.m
 //  MosquitoNoteTests
 //
-//  Created by 周鑫 on 2019/9/9.
+//  Created by 周鑫 on 2019/9/18.
 //  Copyright © 2019 ZX. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "MNFileManage.h"
 
-@interface MosquitoNoteTests : XCTestCase
+@interface fileManageTests : XCTestCase
 
 @end
 
-@implementation MosquitoNoteTests
+@implementation fileManageTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,6 +33,15 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+
+- (void)testNoteName {
+    
+    MNFileManage *mabage = [MNFileManage shareManage];
+    NSString *noteName = [mabage createNoteName];
+    XCTAssertTrue(noteName.length,@"file name error");
+//    NSLog(@"file name %@",noteName);
 }
 
 @end

@@ -10,6 +10,8 @@
 #import "MNInputToolBarView.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "MNPreviewViewController.h"
+
+#import "MNNoteModel.h"
 @interface MNHomeViewController ()<inputToolBarViewDelegate>
 
 @property (nonatomic,weak) UITextView *textView;
@@ -83,6 +85,19 @@
 
 - (void)seveButtonClick:(UIButton *)btn {
     
+    if (self.textView.text.length == 0) {
+        
+        [MNHUD showWarningHUDWithMessage:@"内容不能为空" completion:nil];
+    }else {
+        MNNoteModel *noteModel = [[MNNoteModel alloc]initWithTitle:@"12" forContent:self.textView.text];
+        MNFileManage *fileManage = [MNFileManage shareManage];
+        if ( [fileManage seveNoteObject:noteModel]) {
+            [MNHUD showCompletionHUDWithMessage:@"保存成功" completion:nil];
+        }
+       
+    }
+   
+    
     
 }
 
@@ -128,6 +143,8 @@
             </body>\
             </html>\
             ", self.title, css, htmlValue.toString];
+    
+
 }
 
 

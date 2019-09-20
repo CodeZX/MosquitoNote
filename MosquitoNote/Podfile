@@ -11,6 +11,14 @@ target ‘MosquitoNote’ do
     pod 'BRPickerView'
     pod 'Masonry'
     pod 'YYCategories'
+    
+    target 'MosquitoNoteTests' do
+        inherit! :search_paths
+    end
+    
+    target 'MosquitoNoteUITests' do
+        inherit! :search_paths
+    end
 
 end
 

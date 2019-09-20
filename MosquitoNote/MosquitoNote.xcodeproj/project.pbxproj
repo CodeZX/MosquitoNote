@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C254FCE2332008E00738D1F /* MNFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C254FCD2332008E00738D1F /* MNFileManage.m */; };
+		3C254FD12332187C00738D1F /* MNNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C254FD02332187C00738D1F /* MNNoteModel.m */; };
+		3C2550132332370000738D1F /* fileManageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2550122332370000738D1F /* fileManageTests.m */; };
+		3C2566EB2334B4CC00D7AB32 /* MNHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2566EA2334B4CC00D7AB32 /* MNHUD.m */; };
 		3CF839762326256C00DD9473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839752326256C00DD9473 /* AppDelegate.m */; };
 		3CF8397C2326256C00DD9473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8397A2326256C00DD9473 /* Main.storyboard */; };
 		3CF8397E2326256E00DD9473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8397D2326256E00DD9473 /* Assets.xcassets */; };
 		3CF839812326256E00DD9473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF8397F2326256E00DD9473 /* LaunchScreen.storyboard */; };
 		3CF839842326256E00DD9473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839832326256E00DD9473 /* main.m */; };
-		3CF8398E2326256E00DD9473 /* MosquitoNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8398D2326256E00DD9473 /* MosquitoNoteTests.m */; };
 		3CF839992326256E00DD9473 /* MosquitoNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839982326256E00DD9473 /* MosquitoNoteUITests.m */; };
 		3CF839BF23262F8700DD9473 /* MNBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839BE23262F8700DD9473 /* MNBasicViewController.m */; };
 		3CF839C223262FDB00DD9473 /* MNBasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839C123262FDB00DD9473 /* MNBasicNavigationController.m */; };
@@ -24,6 +27,8 @@
 		3CF839D82327979B00DD9473 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 3CF839D72327979B00DD9473 /* markdown.css */; };
 		3CF839DA232797A300DD9473 /* showdown.js in Resources */ = {isa = PBXBuildFile; fileRef = 3CF839D9232797A300DD9473 /* showdown.js */; };
 		3CF839DD23279F9400DD9473 /* MNPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF839DC23279F9400DD9473 /* MNPreviewViewController.m */; };
+		4DA18FE54CA4CFAD45506A9C /* libPods-MosquitoNoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB1225AAC8AF2F3CEA6D3F8 /* libPods-MosquitoNoteTests.a */; };
+		6F1C5054BC3DD186D9312D95 /* libPods-MosquitoNoteUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDF705D3E851F42C5ABEAA1 /* libPods-MosquitoNoteUITests.a */; };
 		D12452DBC1EB27AF6B4A4B94 /* libPods-MosquitoNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C1487931A674AE8E2CAB9C /* libPods-MosquitoNote.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1902A7DDD38E89D1E3E4AD65 /* Pods-MosquitoNoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNoteUITests/Pods-MosquitoNoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB1225AAC8AF2F3CEA6D3F8 /* libPods-MosquitoNoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MosquitoNoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C254FCC2332008E00738D1F /* MNFileManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNFileManage.h; sourceTree = "<group>"; };
+		3C254FCD2332008E00738D1F /* MNFileManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNFileManage.m; sourceTree = "<group>"; };
+		3C254FCF2332187C00738D1F /* MNNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNNoteModel.h; sourceTree = "<group>"; };
+		3C254FD02332187C00738D1F /* MNNoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNNoteModel.m; sourceTree = "<group>"; };
+		3C2550122332370000738D1F /* fileManageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fileManageTests.m; sourceTree = "<group>"; };
+		3C2566E92334B4CC00D7AB32 /* MNHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNHUD.h; sourceTree = "<group>"; };
+		3C2566EA2334B4CC00D7AB32 /* MNHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNHUD.m; sourceTree = "<group>"; };
 		3CF839712326256C00DD9473 /* MosquitoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosquitoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF839742326256C00DD9473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CF839752326256C00DD9473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,7 +68,6 @@
 		3CF839822326256E00DD9473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CF839832326256E00DD9473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3CF839892326256E00DD9473 /* MosquitoNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosquitoNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CF8398D2326256E00DD9473 /* MosquitoNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosquitoNoteTests.m; sourceTree = "<group>"; };
 		3CF8398F2326256E00DD9473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CF839942326256E00DD9473 /* MosquitoNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosquitoNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF839982326256E00DD9473 /* MosquitoNoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosquitoNoteUITests.m; sourceTree = "<group>"; };
@@ -79,8 +92,12 @@
 		3CF839DB23279F9400DD9473 /* MNPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNPreviewViewController.h; sourceTree = "<group>"; };
 		3CF839DC23279F9400DD9473 /* MNPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNPreviewViewController.m; sourceTree = "<group>"; };
 		43C1487931A674AE8E2CAB9C /* libPods-MosquitoNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MosquitoNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67450462413C5405FAD827E5 /* Pods-MosquitoNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNoteTests/Pods-MosquitoNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		6FF034E433399F771E8C5AEE /* Pods-MosquitoNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote.debug.xcconfig"; sourceTree = "<group>"; };
+		96F657BC4F00BD906780B999 /* Pods-MosquitoNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNoteTests/Pods-MosquitoNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4E5FE02B9DD27494F0FA4CE /* Pods-MosquitoNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNoteUITests/Pods-MosquitoNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A5004C9E6898740958954AD7 /* Pods-MosquitoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote.release.xcconfig"; sourceTree = "<group>"; };
+		ECDF705D3E851F42C5ABEAA1 /* libPods-MosquitoNoteUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MosquitoNoteUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA18FE54CA4CFAD45506A9C /* libPods-MosquitoNoteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,12 +121,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1C5054BC3DD186D9312D95 /* libPods-MosquitoNoteUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C254FCB2331FEF300738D1F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3C254FCC2332008E00738D1F /* MNFileManage.h */,
+				3C254FCD2332008E00738D1F /* MNFileManage.m */,
+				3C2566E92334B4CC00D7AB32 /* MNHUD.h */,
+				3C2566EA2334B4CC00D7AB32 /* MNHUD.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		3CF839682326256C00DD9473 = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +174,8 @@
 		3CF8398C2326256E00DD9473 /* MosquitoNoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				3CF8398D2326256E00DD9473 /* MosquitoNoteTests.m */,
 				3CF8398F2326256E00DD9473 /* Info.plist */,
+				3C2550122332370000738D1F /* fileManageTests.m */,
 			);
 			path = MosquitoNoteTests;
 			sourceTree = "<group>";
@@ -162,6 +192,7 @@
 		3CF839A6232628AF00DD9473 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3C254FCB2331FEF300738D1F /* Tools */,
 				3CF839B823262EC900DD9473 /* Basic */,
 				3CF839B723262EA900DD9473 /* Home */,
 			);
@@ -184,6 +215,8 @@
 		3CF839A8232628AF00DD9473 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C254FCF2332187C00738D1F /* MNNoteModel.h */,
+				3C254FD02332187C00738D1F /* MNNoteModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				43C1487931A674AE8E2CAB9C /* libPods-MosquitoNote.a */,
+				2EB1225AAC8AF2F3CEA6D3F8 /* libPods-MosquitoNoteTests.a */,
+				ECDF705D3E851F42C5ABEAA1 /* libPods-MosquitoNoteUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +311,10 @@
 			children = (
 				6FF034E433399F771E8C5AEE /* Pods-MosquitoNote.debug.xcconfig */,
 				A5004C9E6898740958954AD7 /* Pods-MosquitoNote.release.xcconfig */,
+				96F657BC4F00BD906780B999 /* Pods-MosquitoNoteTests.debug.xcconfig */,
+				67450462413C5405FAD827E5 /* Pods-MosquitoNoteTests.release.xcconfig */,
+				1902A7DDD38E89D1E3E4AD65 /* Pods-MosquitoNoteUITests.debug.xcconfig */,
+				A4E5FE02B9DD27494F0FA4CE /* Pods-MosquitoNoteUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -306,6 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CF839A02326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNoteTests" */;
 			buildPhases = (
+				8706AA15DD80F4A07A4C0C2D /* [CP] Check Pods Manifest.lock */,
 				3CF839852326256E00DD9473 /* Sources */,
 				3CF839862326256E00DD9473 /* Frameworks */,
 				3CF839872326256E00DD9473 /* Resources */,
@@ -324,6 +364,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CF839A32326256E00DD9473 /* Build configuration list for PBXNativeTarget "MosquitoNoteUITests" */;
 			buildPhases = (
+				34CDAAFBB3B553D03D407B61 /* [CP] Check Pods Manifest.lock */,
 				3CF839902326256E00DD9473 /* Sources */,
 				3CF839912326256E00DD9473 /* Frameworks */,
 				3CF839922326256E00DD9473 /* Resources */,
@@ -434,6 +475,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MosquitoNote/Pods-MosquitoNote-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		34CDAAFBB3B553D03D407B61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosquitoNoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		65D17C2D9EB3980985672705 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,6 +505,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MosquitoNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8706AA15DD80F4A07A4C0C2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosquitoNoteTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,8 +544,11 @@
 				3CF839CB2326321C00DD9473 /* MNMainNavigationController.m in Sources */,
 				3CF839C52326305F00DD9473 /* MNHomeViewController.m in Sources */,
 				3CF839D5232651F200DD9473 /* MNToolBarItemCell.m in Sources */,
+				3C254FCE2332008E00738D1F /* MNFileManage.m in Sources */,
 				3CF839842326256E00DD9473 /* main.m in Sources */,
+				3C254FD12332187C00738D1F /* MNNoteModel.m in Sources */,
 				3CF839762326256C00DD9473 /* AppDelegate.m in Sources */,
+				3C2566EB2334B4CC00D7AB32 /* MNHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF8398E2326256E00DD9473 /* MosquitoNoteTests.m in Sources */,
+				3C2550132332370000738D1F /* fileManageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +661,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = (
+					"${SRCROOT}",
+					"/**",
+				);
 			};
 			name = Debug;
 		};
@@ -635,6 +719,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = (
+					"${SRCROOT}",
+					"/**",
+				);
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -677,6 +765,7 @@
 		};
 		3CF839A12326256E00DD9473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F657BC4F00BD906780B999 /* Pods-MosquitoNoteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -696,6 +785,7 @@
 		};
 		3CF839A22326256E00DD9473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67450462413C5405FAD827E5 /* Pods-MosquitoNoteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -715,6 +805,7 @@
 		};
 		3CF839A42326256E00DD9473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1902A7DDD38E89D1E3E4AD65 /* Pods-MosquitoNoteUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 484G6WE6BR;
@@ -733,6 +824,7 @@
 		};
 		3CF839A52326256E00DD9473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E5FE02B9DD27494F0FA4CE /* Pods-MosquitoNoteUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 484G6WE6BR;
