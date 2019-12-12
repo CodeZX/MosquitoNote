@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C21FDFE2338A78D00AB79B5 /* MNFileDirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C21FDFD2338A78D00AB79B5 /* MNFileDirectoryViewController.m */; };
 		3C254FCE2332008E00738D1F /* MNFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C254FCD2332008E00738D1F /* MNFileManage.m */; };
 		3C254FD12332187C00738D1F /* MNNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C254FD02332187C00738D1F /* MNNoteModel.m */; };
 		3C2550132332370000738D1F /* fileManageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2550122332370000738D1F /* fileManageTests.m */; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		1902A7DDD38E89D1E3E4AD65 /* Pods-MosquitoNoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosquitoNoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MosquitoNoteUITests/Pods-MosquitoNoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EB1225AAC8AF2F3CEA6D3F8 /* libPods-MosquitoNoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MosquitoNoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C21FDFC2338A78D00AB79B5 /* MNFileDirectoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNFileDirectoryViewController.h; sourceTree = "<group>"; };
+		3C21FDFD2338A78D00AB79B5 /* MNFileDirectoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNFileDirectoryViewController.m; sourceTree = "<group>"; };
 		3C254FCC2332008E00738D1F /* MNFileManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNFileManage.h; sourceTree = "<group>"; };
 		3C254FCD2332008E00738D1F /* MNFileManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNFileManage.m; sourceTree = "<group>"; };
 		3C254FCF2332187C00738D1F /* MNNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNNoteModel.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				3CF839CA2326321C00DD9473 /* MNMainNavigationController.m */,
 				3CF839DB23279F9400DD9473 /* MNPreviewViewController.h */,
 				3CF839DC23279F9400DD9473 /* MNPreviewViewController.m */,
+				3C21FDFC2338A78D00AB79B5 /* MNFileDirectoryViewController.h */,
+				3C21FDFD2338A78D00AB79B5 /* MNFileDirectoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF839D223264A8600DD9473 /* MNInputToolBarView.m in Sources */,
+				3C21FDFE2338A78D00AB79B5 /* MNFileDirectoryViewController.m in Sources */,
 				3CF839BF23262F8700DD9473 /* MNBasicViewController.m in Sources */,
 				3CF839C82326310F00DD9473 /* MNBasicTabBarController.m in Sources */,
 				3CF839C223262FDB00DD9473 /* MNBasicNavigationController.m in Sources */,

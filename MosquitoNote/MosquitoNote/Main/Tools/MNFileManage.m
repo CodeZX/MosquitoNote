@@ -75,6 +75,27 @@ static MNFileManage * _instance = nil;
     return [formatter stringFromDate:[NSDate date]];
 }
 
+
+- (NSArray *)noteList {
+    
+    NSMutableArray *noteList = [[NSMutableArray alloc]init];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *noteNames =  [fileManager contentsOfDirectoryAtPath:self.noteFolderPath error:nil];
+    for (NSString * noteName in noteNames) {
+        NSString *notePath = [self.noteFolderPath stringByAppendingPathComponent:noteName];
+        NSLog(@"notePath%@",notePath);
+        if ([fileManager fileExistsAtPath:notePath]) {
+            NSData *noteData = [NSData dataWithContentsOfFile:notePath];
+            MNNoteModel *noteModel = [NSKeyedUnarchiver unarchiveObjectWithData:noteData exception:nil];
+            if (noteModel) {
+                [noteList addObject:noteModel];
+            }
+        }
+    }
+    
+    return noteList;
+}
+
 //
 //- (NSString *)noteFolderPath {
 //

@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupConfig];
+}
+
+- (void)setupConfig {
+    
+    self.navigationBar.tintColor = [UIColor blackColor];
 }
 
 /*

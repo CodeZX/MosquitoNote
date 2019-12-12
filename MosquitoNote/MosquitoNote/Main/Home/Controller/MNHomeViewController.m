@@ -10,11 +10,13 @@
 #import "MNInputToolBarView.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "MNPreviewViewController.h"
+#import "MNFileDirectoryViewController.h"
 
 #import "MNNoteModel.h"
 @interface MNHomeViewController ()<inputToolBarViewDelegate>
 
 @property (nonatomic,weak) UITextView *textView;
+@property (nonatomic,weak) UIButton *createNoteButton;
 @property (nonatomic,strong) JSContext *jsContext;
 
 @end
@@ -61,10 +63,10 @@
     seveButtonItem.tintColor = [UIColor blackColor];
     UIBarButtonItem *previewButtonItem  = [[UIBarButtonItem alloc]initWithTitle:@"预览" style:UIBarButtonItemStylePlain target:self action:@selector(previewButtonClick:)];
     previewButtonItem.tintColor = [UIColor blackColor];
-    UIBarButtonItem *newNoteButtonItem  = [[UIBarButtonItem alloc]initWithTitle:@"新建" style:UIBarButtonItemStylePlain target:self action:@selector(newNoteButtonClick:)];
-    newNoteButtonItem.tintColor = [UIColor blackColor];
+    UIBarButtonItem *contentsButtonItem  = [[UIBarButtonItem alloc]initWithTitle:@"目录" style:UIBarButtonItemStylePlain target:self action:@selector(contentsButtonClick:)];
+    contentsButtonItem.tintColor = [UIColor blackColor];
     self.navigationItem.rightBarButtonItems = @[seveButtonItem,previewButtonItem];
-    self.navigationItem.leftBarButtonItem = newNoteButtonItem;
+    self.navigationItem.leftBarButtonItem = contentsButtonItem;
     
     
     UITextView *textView = [[UITextView alloc]init];
@@ -77,6 +79,26 @@
         make.edges.equalTo(self.view);
         
     }];
+    
+    
+    UIButton *createNoteButton =  [[UIButton alloc]init];
+//    createNoteButton.backgroundColor = [UIColor redColor];
+    createNoteButton.layer.borderColor = [UIColor blackColor].CGColor;
+    createNoteButton.layer.borderWidth = 1;
+    createNoteButton.layer.cornerRadius = 40;
+    createNoteButton.layer.masksToBounds = YES;
+    [createNoteButton setTitle:@"+" forState:UIControlStateNormal];
+    [createNoteButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [createNoteButton addTarget:self action:@selector(createNoteButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:createNoteButton];
+    self.createNoteButton = createNoteButton;
+    [self.createNoteButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.view).offset(-20);
+        make.bottom.equalTo(self.view).offset(-80);
+        make.size.equalTo(CGSizeMake(80,80));
+    }];
+    			
+   
     
     
     
@@ -111,7 +133,20 @@
     
 }
 
-- (void)newNoteButtonClick:(UIButton *)btn {
+
+
+
+- (void)contentsButtonClick:(UIButton *)btn {
+    
+    MNFileDirectoryViewController *fileDirectoryVC = [[MNFileDirectoryViewController alloc]init];
+    fileDirectoryVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    MNBasicNavigationController *navVC = [[MNBasicNavigationController alloc]initWithRootViewController:fileDirectoryVC];
+    [self presentViewController:navVC animated:YES completion:nil];
+    
+    
+    
+}
+- (void)createNoteButtonClick:(UIButton *)btn {
     
     
 }

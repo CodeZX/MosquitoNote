@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shareManage;
 - (BOOL)seveNoteObject:(MNNoteModel *)noteObject;
-- 
+- (NSArray *)noteList;
 
 @end
 

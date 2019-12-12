@@ -39,9 +39,17 @@
 - (void)testNoteName {
     
     MNFileManage *mabage = [MNFileManage shareManage];
-    NSString *noteName = [mabage createNoteName];
-    XCTAssertTrue(noteName.length,@"file name error");
+//    NSString *noteName = [mabage createNoteName];
+//    XCTAssertTrue(noteName.length,@"file name error");
 //    NSLog(@"file name %@",noteName);
+}
+
+- (void)testNoteList {
+    
+    MNFileManage *manage = [MNFileManage shareManage];
+    NSLog(@"noteList%@",[manage noteList]);
+    XCTAssertNotNil([manage noteList],@"没有笔记文件");
+    
 }
 
 @end
